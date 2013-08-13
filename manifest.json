@@ -1,0 +1,23 @@
+{
+  "name": "kintai",
+  "version": "0.3",
+  "description": "定時になったらconfirmが出てOKしたら退勤できる",
+  "background": { "scripts": ["background.js"] },
+  "browser_action": {
+    "default_icon" : "images/icon19.png",
+    "default_title" : "勤怠",
+    "default_popup": "popup.html"
+  },
+  "permissions" : [
+      "tabs",
+      "http://*/*",
+      "https://*/*"
+  ],
+  "icons" : {
+    "16" : "images/icon16.png",
+    "48" : "images/icon48.png",
+    "128" : "images/icon128.png"
+  },
+  "manifest_version": 2,
+  "options_page": "options.html"
+}

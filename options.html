@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="options.css" />
+    <title>
+      設定
+    </title>
+  </head>
+  <body>
+    <div id="container">
+      <h1><img src="images/icon48.png">kintai</h1>
+      <p>
+        URLを設定してください．
+      </p>
+      <form class="setting">
+        <div>
+          <label>
+            <span class="label">出退勤打刻画面</span>
+            <input type="url" name="kintai_url" size="80" placeholder="https://...D.HTML" required title="URLを入力してください" />
+          </label>
+        </div>
+        <div>
+          <label>
+            <span class="label">ログイン画面</span>
+            <input type="url" name="login_url" size="80" placeholder="https://...H.HTML" required title="URLを入力してください" />
+          </label>
+        </div>
+        <div>
+          <label>
+            <span class="label">出退勤時間</span>
+            <input type="number" name="up_at" required title="出勤時刻を入力してください" value="10" min="0" max="24" />:00〜<input type="number" name="down_at" required title="退勤時刻を入力してください" value="19" min="0" max="24" />:00
+
+          </label>
+        </div>
+        <div>
+          <button type="submit" class="save">
+            保存
+          </button>
+        </div>
+      </form>
+      <script src="options.js"></script>
+    </div>
+  </body>
+</html>
